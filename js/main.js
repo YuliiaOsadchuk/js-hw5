@@ -1,6 +1,9 @@
 const getArrayFromStr = (array) => {
     return array.split(',').map(parseFloat);
 }
+const getIntegerArray = (numbers) => {
+    return numbers.filter(number => Number.isInteger(number) && number !== NaN);
+}
 
 const getRandomArray = (lengthArray, minNumber, maxNumber) => {
     let numbers = Array.from({ length: lengthArray }, (value, i) => i);
@@ -14,6 +17,7 @@ const getRandomArray = (lengthArray, minNumber, maxNumber) => {
 
 const getAverage = (numbers) => {
     let numberArray = getArrayFromStr(numbers);
+    numberArray = getIntegerArray(numberArray);
     const sum = numberArray.reduce((total, number) => {
         return total += number;
     }, 0)
@@ -22,6 +26,7 @@ const getAverage = (numbers) => {
 
 const getMedian = (numbers) => {
     let numberArray = getArrayFromStr(numbers);
+    numberArray = getIntegerArray(numberArray);
     numberArray = numberArray.sort(function(a, b) {
         return a - b;
     });
