@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HW#5</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="function-wrapper">
+        <h3>Масив випадкових чисел</h3>
+        <input class="input-style" id="length-array-input" type="number" placeholder="Введіть довжину масиву:" />
+        <input class="input-style" id="min-array-input" type="number" placeholder="Введіть мін число:" />
+        <input class="input-style" id="max-array-input" type="number" placeholder="Введіть макс число:" />
+        <button class="button-style" onclick="handleRandomArray()">Результат</button>
+        <div id="random-array-output"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="function-wrapper">
+        <h3>Масив без парних чисел</h3>
+        <input class="input-style" id="filter-even-array-input" type="text" placeholder="Введіть числа через кому:" />
+        <button class="button-style" onclick="handleFilterEvenNumbers()">Результат</button>
+        <div id="filter-even-array-output"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="function-wrapper">
+        <h3>Масив чисел кратних 5</h3>
+        <input class="input-style" id="get-divided-by-five-input" type="text" placeholder="Введіть числа через кому:" />
+        <button class="button-style" onclick="handleGetDividedByFive()">Результат</button>
+        <div id="get-divided-by-five-output"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="function-wrapper">
+        <h3>Порахувати кількість чисел більше 0</h3>
+        <input class="input-style" id="count-positive-numbers-input" type="text" placeholder="Введіть числа через кому:" />
+        <button class="button-style" onclick="handleCountPositiveNumbers()">Результат</button>
+        <div id="count-positive-numbers-output"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="function-wrapper">
+        <h3>Порахувати середнє значення</h3>
+        <input class="input-style" id="get-average-input" type="text" placeholder="Введіть числа через кому:" />
+        <button class="button-style" onclick="handleGetAverage()">Результат</button>
+        <div id="get-average-output"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="function-wrapper">
+        <h3>Порахувати медіану</h3>
+        <input class="input-style" id="get-median-input" type="text" placeholder="Введіть числа через кому:" />
+        <button class="button-style" onclick="handleGetMedian()">Результат</button>
+        <div id="get-median-output"></div>
+        <div class="line"></div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/handle.js"></script>
+</body>
+
+</html>
